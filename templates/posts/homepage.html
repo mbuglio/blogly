@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Recent Posts</h1>
+
+{% for post in posts %}
+<h2 class="mt-4">
+    <a href="/posts/{{post.post_id}}">{{post.post_title}}</a>
+</h2>
+<p>{{post.post_content}}</p>
+<p>
+    <small>By {{post.user.full_name}} on {{post.friendly_date}}</small>
+</p>
+{% endfor %}
+
+{% endblock %}
