@@ -4,7 +4,7 @@ from flask import Flask, render_template, redirect, request, flash
 from models import db, connect_db, User, Post, Tag
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:K1ashmir!@localhost:5432/blogly_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:passwordlocalhost:/blogly_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ECHO'] = True
 app.config['SECRET_KEY'] = '12234joijwef'
