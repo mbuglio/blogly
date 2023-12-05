@@ -11,6 +11,8 @@ app.config['SECRET_KEY'] = '12234joijwef'
 
 connect_db(app)
 
+# use the code below to first add database or if you need to completely refresh database and wipe everything
+# DO NOT USE each time
 # with app.app_context():
 #     db.drop_all()
 #     db.create_all()
